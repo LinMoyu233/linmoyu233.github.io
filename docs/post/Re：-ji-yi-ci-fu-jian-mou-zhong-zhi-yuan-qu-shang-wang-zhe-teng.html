@@ -119,7 +119,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li>日常够用，非必要无需折腾</li>
 </ol>
 <h4>搭建：</h4>
-<h5>服务端：</h5>
+<h4>服务端：</h4>
 <p><em><strong>*可以使用UA3F代替如下部署服务端部分。*</strong></em></p>
 <ol>
 <li>如果你是OpenWRT设备，前往“PassWall”中有个服务端页面，其搭建非常简单。</li>
@@ -132,7 +132,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p><strong>创建完服务后，在用户管理前给相关服务端配置的打勾，记得勾选服务器端的启用。</strong></p>
 <p>在Windows/Linux环境下，使用Sing-Box可以搭建。<a href="https://raw.githubusercontent.com/LinMoyu233/Archives/refs/heads/main/socks-config.conf" rel="nofollow">配置文件示例</a></p>
 <p>运行命令：“sing-box run -c socks5-config.json”，其中socks5-config.json为文件名。</p>
-<h5>客户端：</h5>
+<h4>客户端：</h4>
 <ol>
 <li>电脑或手机选择任一代理软件（包括但不限于V2RayN、NekoBox等），服务协议选择Socks。IP填写服务端在局域网的IP，端口填写你选择的监听端口。如果你有勾选身份认证，记得填写用户名和密码。</li>
 <li>OpenWRT可以透明代理局域网，使用一些同时支持Socks5的代理插件即可。</li>
@@ -161,11 +161,11 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li>前文已述，WireGuard速度相较于Socks会稍微慢一点，但也够用且更完美些（50Mb/s）</li>
 </ol>
 <h4>搭建：</h4>
-<h5><strong>基于WireGuard</strong></h5>
+<h4><strong>基于WireGuard</strong></h4>
 <ol>
 <li>Windows可以使用<a href="https://github.com/micahmo/WgServerforWindows">WS4W</a>搭建，在Linux下可以使用Docker项目<a href="https://github.com/wg-easy/wg-easy">wg-easy</a>。</li>
 </ol>
-<h5><strong>基于OpenVPN</strong></h5>
+<h4><strong>基于OpenVPN</strong></h4>
 <ol>
 <li>OpenVPN在Linux下可以用脚本<a href="https://github.com/hwdsl2/openvpn-install">openvpn-install</a>，OpenWRT下有luciapp搭建服务端。</li>
 <li>在Windows下我使用SoftEther VPN Server没有成功过，一直卡验证。网络上有不少教程。</li>

@@ -52,7 +52,7 @@
 
 #### 搭建：
 
-##### 服务端：
+#### 服务端：
 
 ***\*可以使用UA3F代替如下部署服务端部分。\****
 
@@ -76,7 +76,7 @@
 
 
 
-##### 客户端：
+#### 客户端：
 
 1. 电脑或手机选择任一代理软件（包括但不限于V2RayN、NekoBox等），服务协议选择Socks。IP填写服务端在局域网的IP，端口填写你选择的监听端口。如果你有勾选身份认证，记得填写用户名和密码。
 2. OpenWRT可以透明代理局域网，使用一些同时支持Socks5的代理插件即可。
@@ -115,11 +115,11 @@ OpenVPN相较于WireGuard性能会差，可基于TCP（WG强制要求UDP）。�
 
 #### 搭建：
 
-##### **基于WireGuard**
+#### **基于WireGuard**
 
 1. Windows可以使用[WS4W](https://github.com/micahmo/WgServerforWindows)搭建，在Linux下可以使用Docker项目[wg-easy](https://github.com/wg-easy/wg-easy)。
 
-##### **基于OpenVPN**
+#### **基于OpenVPN**
 
 1. OpenVPN在Linux下可以用脚本[openvpn-install](https://github.com/hwdsl2/openvpn-install)，OpenWRT下有luciapp搭建服务端。
 2. 在Windows下我使用SoftEther VPN Server没有成功过，一直卡验证。网络上有不少教程。
