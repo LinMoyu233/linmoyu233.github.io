@@ -6,18 +6,18 @@
 > **确保人身安全，确保你使用之后不会被喝茶。**
 
 > [!TIP]
-> **脑子是最重要的 不会帮你搭建 不接受直接搭建（指线下）。**
-> **多Bing多Google 不要使用Baidu 因为你所在的地区不太支持你这么做（类似于搭梯）。**
 > **由于手上相关硬件基本都卖完了，所以基本没图。**
-> **实在不行建议用现成品，百度一搜一大堆“校园网免认证绕过”，基本都是基于UDP53。**
-> **能走读就最好，这个方式肯定不如原生来的好。只要你家长同意就能走读，不在镇上也没关系**
+> **脑子是最重要的、不会帮你搭建、不接受社会工程学直接帮你搭建、除非你跟我真熟。**
+> **多Bing多Google，不要使用Baidu。因为你所在的地区不太支持你这么做（类似于搭梯）。**
+> **实在不行建议用现成品，百度一搜一大堆“校园网免认证绕过”，基本都是UDP53。**
+> **能走读就最好，这个方式肯定不如原生直接上网来的好。只要你家长同意就能走读，不在镇上也没关系。**
 
 > [!NOTE]
 > **[前章（23/11）](https://www.coolapk.com/feed/51778131)写的过于乱了所以重写了，其中也有对本校网络架构的猜测。**
 > **IP段50-57都是贵集团的，但是7条IP日常只见到50、51、52（现在不常见了），且上网疑似没有多线负载？57开放端口多一些其他开放端口都一样。**
 
 > [!IMPORTANT]
-> **如果是本校的：已经被发觉了，可能被限速了。所以切勿声张啦。**
+> **如果是本校的：已经被发觉了，单设备外网连接速率可能已经被限速了。所以切勿声张啦。**
 
 ## 前言
 
@@ -67,7 +67,7 @@
 
 ***\*可以使用UA3F代替如下部署服务端部分。\****
 
-1. 如果你是OpenWRT设备，前往“PassWall”中有个服务端页面，其搭建非常简单。
+1. 如果你是OpenWRT设备，并且刚刚好有“PassWall”，前往“PassWall”中有个服务端页面，其搭建非常简单。
 
 ![image](https://github.com/user-attachments/assets/ff31e4ff-39f5-43f4-b6fc-a1c27196f4d7)
 
@@ -85,7 +85,7 @@
 
 **如果连不上并且局域网内确实可以互连，请确保OpenWRT防火墙中的通信协议放行了监听端口**
 
-在Windows/Linux环境下，使用Sing-Box可以搭建（需自行下载安装）。[配置文件示例](https://raw.githubusercontent.com/LinMoyu233/Archives/refs/heads/main/socks-config.conf)
+或使用[Sing-Box](https://github.com/SagerNet/sing-box/releases)可执行文件直接搭建服务端。[配置文件示例](https://raw.githubusercontent.com/LinMoyu233/Archives/refs/heads/main/socks-config.conf)
 
 运行命令：“sing-box run -c socks5-config.json”，其中socks5-config.json为文件名。
 
@@ -180,9 +180,9 @@ OpenVPN相较于WireGuard性能会差，可基于TCP（WG强制要求UDP）。�
 
 ### **感觉挺厉害的**
 
-1. [GitHub - dnomd343/XProxy: 虚拟旁路由网关，支持内网设备IPv4与IPv6双栈透明代理](https://github.com/dnomd343/XProxy) 
-
+1. [dnomd343/XProxy: 虚拟旁路由网关，支持内网设备IPv4与IPv6双栈透明代理](https://github.com/dnomd343/XProxy) 
 看着挺厉害的，有点看不懂，懒得折腾。
+2. [Hysteria](https://github.com/apernet/hysteria) 打算国庆回去之后折腾，玩客云的性能用wg实在是有点难搞了用歇斯底里救一下
 
 
 
