@@ -12,6 +12,10 @@
 
 [出处：少轻狂](https://www.flighty.cn/)
 
+[VirusTotal](https://www.virustotal.com/gui/file/639ae78bd358d28b8a188b8d26a8dc08425b5525be707b14116aa60aa16d1923?nocache=1) 见仁见智。
+![QQ20241002-142411](https://github.com/user-attachments/assets/ac0ad8a2-c1ed-491d-8179-00c4eb4968a2)
+
+
 # 关于自动更新
 
 安装后记得去设置里关闭有新版本时提醒我。
