@@ -98,9 +98,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>省流：园区大内网，没做隔离但网段和VLAN不同，故不能直接改网关。可以在内网中搭建一台代理服务器，通过代理服务器中转。</p>
 <h2>准备工作</h2>
 <ol>
-<li>一台标准的x86或arm设备充当<strong>服务端</strong>，可运行Windows、Linux或OpenWRT（运行内存最好大于或等于512M，否则容易爆运存）。</li>
+<li>一台标准的x86或arm设备充当<strong>服务端</strong>，可运行Windows、Linux或OpenWRT（其一即可）。</li>
 <li>OpenWRT设备[可选，充当透明代理，<strong>客户端</strong>]</li>
-<li><strong>如果你使用路由器搭建：不建议任一端运存小于512M，经常爆内存导致卡死或杀进程。</strong></li>
+<li><strong>如果你使用路由器搭建：不建议任一端运存小于512M，否则容易经常爆内存导致卡死或杀进程。</strong></li>
 <li><strong>如果你使用路由器搭建：不建议任一端使用MT7621。7621已经过时了，仅测试过Socks，200Mbps附近且CPU吃不满。重写前的测试环境为MT7621</strong>。</li>
 </ol>
 <p><strong>财力不雄厚。我手上的设备速率普遍只有千兆，没有2.5G 。所以我没有也没法测试过局域网内最高带宽是多少，也不知道是不是全校都在用一个千兆外网。</strong></p>
@@ -220,7 +220,8 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <ol>
 <li><a href="https://github.com/dnomd343/XProxy">dnomd343/XProxy: 虚拟旁路由网关，支持内网设备IPv4与IPv6双栈透明代理</a><br>
 看着挺厉害的，有点看不懂，懒得折腾。</li>
-<li><a href="https://github.com/apernet/hysteria">Hysteria</a></li>
+<li><a href="https://github.com/apernet/hysteria">Hysteria</a><br>
+对我而言我没必要搭建所以就没有写，相较于WireGuard性能优秀些，不支持ICMP。 如果你在局域网内没有服务器，搭配UDP53端口绕过也是较为常见的方式。</li>
 </ol>
 <p>如果某些人看见：<strong>把极域自带功能再拉出来说是新机房特点，你这个面子工程？？？</strong></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>

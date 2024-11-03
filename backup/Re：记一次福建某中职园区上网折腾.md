@@ -22,9 +22,9 @@
 
 ## 准备工作
 
-1. 一台标准的x86或arm设备充当**服务端**，可运行Windows、Linux或OpenWRT（运行内存最好大于或等于512M，否则容易爆运存）。
+1. 一台标准的x86或arm设备充当**服务端**，可运行Windows、Linux或OpenWRT（其一即可）。
 2. OpenWRT设备[可选，充当透明代理，**客户端**]
-3. **如果你使用路由器搭建：不建议任一端运存小于512M，经常爆内存导致卡死或杀进程。**
+3. **如果你使用路由器搭建：不建议任一端运存小于512M，否则容易经常爆内存导致卡死或杀进程。**
 4. **如果你使用路由器搭建：不建议任一端使用MT7621。7621已经过时了，仅测试过Socks，200Mbps附近且CPU吃不满。重写前的测试环境为MT7621**。
 
 **财力不雄厚。我手上的设备速率普遍只有千兆，没有2.5G 。所以我没有也没法测试过局域网内最高带宽是多少，也不知道是不是全校都在用一个千兆外网。**
@@ -136,7 +136,6 @@ OpenVPN相较于WireGuard性能会差，可基于TCP（WG强制要求UDP）。�
 2. 在Windows下我使用SoftEther VPN Server没有成功过，一直卡验证。网络上有不少教程。
 
 
-
 ## 一些注意事项/可能的规避检测？
 
 1. 使用[UA2F](https://github.com/Zxilly/UA2F)/[UA3F](https://github.com/SunBK201/UA3F)修改UA规避检测。
@@ -183,6 +182,7 @@ OpenVPN相较于WireGuard性能会差，可基于TCP（WG强制要求UDP）。�
 1. [dnomd343/XProxy: 虚拟旁路由网关，支持内网设备IPv4与IPv6双栈透明代理](https://github.com/dnomd343/XProxy) 
 看着挺厉害的，有点看不懂，懒得折腾。
 2. [Hysteria](https://github.com/apernet/hysteria)
+对我而言我没必要搭建所以就没有写，相较于WireGuard性能优秀些，不支持ICMP。 如果你在局域网内没有服务器，搭配UDP53端口绕过也是较为常见的方式。
 
 
 
