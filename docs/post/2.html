@@ -87,10 +87,8 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <strong>确保人身安全，确保你使用之后不会被喝茶。</strong></p>
 </div>
 <div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Tip</p><p><strong>由于手上相关硬件基本都卖完了，所以基本没图。</strong><br>
-<strong>脑子是最重要的、不会帮你搭建、不接受社会工程学直接帮你搭建、除非你跟我真熟。</strong><br>
-<strong>多Bing多Google，不要使用Baidu。因为你所在的地区不太支持你这么做（类似于搭梯）。</strong><br>
-<strong>实在不行建议用现成品，百度一搜一大堆“校园网免认证绕过”，基本都是UDP53。</strong><br>
-<strong>能走读就最好，这个方式肯定不如原生直接上网来的好。只要你家长同意就能走读，不在镇上也没关系。</strong></p>
+<strong>脑子是最重要的，多Bing多Google，不要使用Baidu。因为你所在的地区不太支持你这么做（类似于搭梯）。</strong><br>
+<strong>实在不行建议用现成品，百度一搜一大堆“校园网免认证绕过”，基本都是UDP53。</strong></p>
 </div>
 <div class="markdown-alert markdown-alert-note"><p class="markdown-alert-title"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p><p><strong><a href="https://www.coolapk.com/feed/51778131" rel="nofollow">前章（23/11）</a>写的过于乱了所以重写了，其中也有对本校网络架构的猜测。</strong><br>
 <strong>IP段50-57都是贵集团的，但是7条IP日常只见到50、51、52（现在不常见了），且上网疑似没有多线负载？57开放端口多一些其他开放端口都一样。</strong></p>
@@ -102,11 +100,11 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <ol>
 <li>一台标准的x86或arm设备充当<strong>服务端</strong>，可运行Windows、Linux或OpenWRT（运行内存最好大于或等于512M，否则容易爆运存）。</li>
 <li>OpenWRT设备[可选，充当透明代理，<strong>客户端</strong>]</li>
-<li><strong>不建议任一端使用MT7621搭建，7621已经过时了。仅测试过Socks，200Mbps附近且CPU吃不满，重写前的测试环境为MT7621</strong>。</li>
-<li><strong>不建议任一端运存小于或等于512M，在IPQ6018、MT7981+256M+“PassWall”环境下经常爆内存导致卡死杀进程</strong>。</li>
+<li><strong>如果你使用路由器搭建：不建议任一端运存小于512M，经常爆内存导致卡死或杀进程。</strong></li>
+<li><strong>如果你使用路由器搭建：不建议任一端使用MT7621。7621已经过时了，仅测试过Socks，200Mbps附近且CPU吃不满。重写前的测试环境为MT7621</strong>。</li>
 </ol>
-<p><strong>最高可用速率取决于设备和上层交换机、网关性能，以及中转会给带宽打折。比如我手上的路由普遍只有1000Mbps，没有2.5G 。</strong></p>
-<p><strong>我没有测试过局域网内最高带宽是多少，也不知道是不是全校都在用一个千兆外网。</strong></p>
+<p><strong>财力不雄厚。我手上的设备速率普遍只有千兆，没有2.5G 。所以我没有也没法测试过局域网内最高带宽是多少，也不知道是不是全校都在用一个千兆外网。</strong></p>
+<p><strong>最高可用速率取决于设备和上层交换机、网关性能，以及中转会给可用带宽打折。</strong></p>
 <h2></h2>
 <h2>正文</h2>
 <h3>Socks或各类代理：</h3>
@@ -114,7 +112,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <h4>优点：</h4>
 <ol>
 <li>用户层，无需内核模块，搭建简单</li>
-<li>纯吃CPU性能（在IPQ6018上可以跑满带宽且CPU没满）</li>
+<li>纯吃CPU性能（在IPQ6018上可以跑满折下来的带宽且CPU没满）</li>
 </ol>
 <h4>缺点：</h4>
 <ol>
@@ -122,7 +120,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </ol>
 <h4>实现效果：</h4>
 <ol>
-<li>可吃满，巅峰下载60Mb/s（测试基于花瓣测速，设备只有1000Mbps，中转折半）</li>
+<li>可吃满，巅峰下载60Mb/s（测试基于花瓣测速，设备只有千兆，中转折半）</li>
 <li>日常够用，非必要无需折腾</li>
 </ol>
 <h4>搭建：</h4>
@@ -161,7 +159,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <h4>缺点：</h4>
 <ol>
 <li>速度略微逊于Socks5</li>
-<li>WG在Linux系下需内核支持，否则只能使用用户态Go，性能打折（打折多少未知。在试用时遇到超时问题，写稿第一天才知系MTU问题，故未测试）</li>
+<li>WG在Linux系下需内核支持，否则只能使用用户态Go，据说性能有损失（打折多少未知。在试用时遇到超时问题，写稿第一天才知系MTU问题，故未测试）</li>
 <li>WireGuard的服务端“如”易搭建。在OpenWRT上有点给我绕麻了，其他平台搭建就很简单。</li>
 <li>OpenVPN基于用户层且性能相较于WG差很多。在MT7981上跑到200Mbps就吃满CPU了，换用IPQ6018则是跑到200Mbps没有吃满，速度也上不去。</li>
 </ol>
