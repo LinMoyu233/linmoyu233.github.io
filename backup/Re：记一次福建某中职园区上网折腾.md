@@ -46,7 +46,7 @@
 #### 优点：
 
 1. 用户层，无需内核模块，搭建简单
-2. 纯吃CPU性能（在IPQ6018上可以跑满折下来的带宽且CPU没满）
+2. 性能不错（在IPQ6018上可以跑满折下来的带宽且CPU没满）
 
 #### 缺点：
 
@@ -108,6 +108,10 @@ WireGuard 是几乎无状态的VPN协议，切换网络零感知，不需要重�
 
 OpenVPN相较于WireGuard性能会差，可基于TCP（WG强制要求UDP）。一般建议使用UDP搭建，不需要类似TCP一样的握手环节，否则延迟++。
 
+**两者均建议使用x86架构的设备搭建，实测使用玩客云搭建完全吃不消**
+![QQ20241105-205226](https://github.com/user-attachments/assets/68ce4ca6-28af-4770-b120-4bf186652f1e)
+
+
 #### 优点：
 
 1. 支持ICMP类报文
@@ -128,12 +132,13 @@ OpenVPN相较于WireGuard性能会差，可基于TCP（WG强制要求UDP）。�
 
 #### **基于WireGuard**
 
-1. Windows可以使用[WS4W](https://github.com/micahmo/WgServerforWindows)搭建，在Linux下可以使用Docker项目[wg-easy](https://github.com/wg-easy/wg-easy)。
+1. Windows：可以使用[WS4W](https://github.com/micahmo/WgServerforWindows)。
+2. Linux：可以使用Docker项目[wg-easy](https://github.com/wg-easy/wg-easy)。
 
 #### **基于OpenVPN**
 
 1. OpenVPN在Linux下可以用脚本[openvpn-install](https://github.com/hwdsl2/openvpn-install)，OpenWRT下有luciapp来搭建服务端。
-2. 在Windows下我使用SoftEther VPN Server没有成功过，一直卡验证。网络上有不少教程。
+在Windows下我使用SoftEther VPN Server没有成功过，验证过不去。网络上有不少教程。
 
 
 ## 一些注意事项/可能的规避检测？
@@ -158,6 +163,7 @@ OpenVPN相较于WireGuard性能会差，可基于TCP（WG强制要求UDP）。�
 在控制面板中将TUN模式的网卡共享给热点的网卡即可。
 ![QQ20241008-133300](https://github.com/user-attachments/assets/26125d55-d20c-4a79-93e8-fd59b5b0050d)
 哦对了，如果53端口可以解析的话就不要开启DNS路由了，免得又绕了一圈。
+*顺带一提，使用了这个方式后你的网速将跑不到20M，建议还是整路由。*
 
 
 
