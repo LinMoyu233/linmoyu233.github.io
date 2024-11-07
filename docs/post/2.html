@@ -103,7 +103,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li><strong>如果你使用路由器搭建：不建议任一端运存小于512M，否则容易经常爆内存导致卡死或杀进程。</strong></li>
 <li><strong>如果你使用路由器搭建：不建议任一端使用MT7621。7621已经过时了，仅测试过Socks，200Mbps附近且CPU吃不满。重写前的测试环境为MT7621</strong>。</li>
 </ol>
-<p><strong>财力不雄厚。我手上的设备速率普遍只有千兆，没有2.5G 。所以我没有也没法测试过局域网内最高带宽是多少，也不知道是不是全校都在用一个千兆外网。</strong></p>
+<p><strong>笔者的财力不雄厚。手上的设备速率普遍只有千兆，没有2.5G 。所以笔者没法测试过局域网内最高带宽是多少，也不知道是不是全校都在用一个千兆外网（貌似是这样的？）。</strong></p>
 <p><strong>最高可用速率取决于设备和上层交换机、网关性能，以及中转会给可用带宽打折。</strong></p>
 <h2></h2>
 <h2>正文</h2>
@@ -151,7 +151,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <h4>介绍：</h4>
 <p>WireGuard 是几乎无状态的VPN协议，切换网络零感知，不需要重新连接VPN，对于经常睡眠-唤醒的电脑特别有用。睡眠唤醒后可以立刻上网。此外 WireGuard 在 Linux 和 Windows 操作系统上均是纯内核态的实现，性能极其高。</p>
 <p>OpenVPN相较于WireGuard性能会差，可基于TCP（WG强制要求UDP）。一般建议使用UDP搭建，不需要类似TCP一样的握手环节，否则延迟++。</p>
-<p><strong>两者均建议使用x86架构的设备搭建，实测使用玩客云搭建完全吃不消</strong><br>
+<p><strong>两者均不建议使用一些arm老矿渣搭建，实测玩客云吃不消</strong><br>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/68ce4ca6-28af-4770-b120-4bf186652f1e"><img src="https://github.com/user-attachments/assets/68ce4ca6-28af-4770-b120-4bf186652f1e" alt="QQ20241105-205226" style="max-width: 100%;"></a></p>
 <h4>优点：</h4>
 <ol>
@@ -160,7 +160,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </ol>
 <h4>缺点：</h4>
 <ol>
-<li>速度略微逊于Socks5</li>
+<li>速度、性能略微逊于Socks5</li>
 <li>WG在Linux系下需内核支持，否则只能使用用户态Go，据说性能有损失（打折多少未知。在试用时遇到超时问题，写稿第一天才知系MTU问题，故未测试）</li>
 <li>WireGuard的服务端“如”易搭建。在OpenWRT上有点给我绕麻了，其他平台搭建就很简单。</li>
 <li>OpenVPN基于用户层且性能相较于WG差很多。在MT7981上跑到200Mbps就吃满CPU了，换用IPQ6018则是跑到200Mbps没有吃满，速度也上不去。</li>
@@ -177,8 +177,8 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </ol>
 <h4><strong>基于OpenVPN</strong></h4>
 <ol>
-<li>OpenVPN在Linux下可以用脚本<a href="https://github.com/hwdsl2/openvpn-install">openvpn-install</a>，OpenWRT下有luciapp来搭建服务端。<br>
-在Windows下我使用SoftEther VPN Server没有成功过，验证过不去。网络上有不少教程。</li>
+<li>OpenVPN在Linux下可以用脚本<a href="https://github.com/hwdsl2/openvpn-install">openvpn-install</a>，OpenWRT下有luciapp来搭建服务端。</li>
+<li>在Windows下可以尝试使用SoftEther VPN Server搭建。但是笔者没有成功过，验证过不去。网络上有不少教程。</li>
 </ol>
 <h2>一些注意事项/可能的规避检测？</h2>
 <ol>
@@ -225,7 +225,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li><a href="https://github.com/dnomd343/XProxy">dnomd343/XProxy: 虚拟旁路由网关，支持内网设备IPv4与IPv6双栈透明代理</a><br>
 看着挺厉害的，有点看不懂，懒得折腾。</li>
 <li><a href="https://github.com/apernet/hysteria">Hysteria</a><br>
-对我而言我没必要搭建所以就没有写，相较于WireGuard性能优秀些，不支持ICMP。 如果你在局域网内没有服务器，搭配UDP53端口绕过也是较为常见的方式。</li>
+对我而言我没必要搭建所以就没有写，相较于WireGuard性能优秀些，没有ICMP。 如果你在局域网内没有服务器，搭配UDP53端口绕过也是较为常见的方式。</li>
 </ol>
 <p>如果某些人看见：<strong>把极域自带功能再拉出来说是新机房特点，你这个面子工程？？？</strong></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
