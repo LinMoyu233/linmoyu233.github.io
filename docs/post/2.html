@@ -98,7 +98,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>省流：园区大内网，没做隔离但网段和VLAN不同，故不能直接改网关。可以在内网中搭建一台代理服务器，通过代理服务器中转。</p>
 <h2>准备工作</h2>
 <ol>
-<li>一台标准的x86或arm设备充当<strong>服务端</strong>，可运行Windows、Linux或OpenWRT（其一即可）。</li>
+<li>一台标准的x86或arm设备充当<strong>服务端</strong>，可运行Windows、Linux或OpenWRT（其一即可），需放在可连接外网的地方。</li>
 <li>OpenWRT设备[可选，充当透明代理，<strong>客户端</strong>]</li>
 <li><strong>如果你使用路由器搭建：不建议任一端运存小于512M，否则容易经常爆内存导致卡死或杀进程。</strong></li>
 <li><strong>如果你使用路由器搭建：不建议任一端使用MT7621。7621已经过时了，仅测试过Socks，200Mbps附近且CPU吃不满。重写前的测试环境为MT7621</strong>。</li>
