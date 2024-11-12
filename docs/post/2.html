@@ -10,13 +10,13 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="~~副：记一次宁技/宁财经上网折腾并拷打fvv信息科~~
+<meta name="description" content="~~副：记宁技/宁财经上网折腾并拷打fvv信息科~~
 
 > [!WARNING]
 > **免责警告**
 > **根据《中华人民共和国计算机信息网络国际联网管理暂行规定》，请勿将该技术用于违法搭建“机场”服务，建立非法信道进行国际联网。">
 <meta property="og:title" content="Re：记一次福建某中职园区上网折腾">
-<meta property="og:description" content="~~副：记一次宁技/宁财经上网折腾并拷打fvv信息科~~
+<meta property="og:description" content="~~副：记宁技/宁财经上网折腾并拷打fvv信息科~~
 
 > [!WARNING]
 > **免责警告**
@@ -81,7 +81,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p><del>副：记一次宁技/宁财经上网折腾并拷打fvv信息科</del></p>
+<div class="markdown-body" id="postBody"><p><del>副：记宁技/宁财经上网折腾并拷打fvv信息科</del></p>
 <div class="markdown-alert markdown-alert-warning"><p class="markdown-alert-title"><svg class="octicon octicon-alert mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Warning</p><p><strong>免责警告</strong><br>
 <strong>根据《中华人民共和国计算机信息网络国际联网管理暂行规定》，请勿将该技术用于违法搭建“机场”服务，建立非法信道进行国际联网。本人不对所做出违法行为负责。</strong><br>
 <strong>确保人身安全，确保你使用之后不会被喝茶。</strong></p>
@@ -146,7 +146,11 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </ol>
 <p>使用“SSR Plus+”时<strong>记得修改UDP代理服务器。</strong></p>
 <p>使用“PassWall”时<strong>记得修改模式为全局代理，代理方式建议修改为tproxy。TCP转发端口修改为所有的，内存小请务必关闭日志。</strong></p>
-<p>如果你的DNS默认可以被解析，可以安装“PassWall”的SmartDNS Dev版本，并且选择DNS服务SmartDNS后不要启用SmartDNS。可以让DNS直接解析防止再过一遍Socks。</p>
+<p>如果你的DNS在绕过之前就可以解析，如下奇技淫巧可以防止在代理服务器解析（不一定有用）</p>
+<ol>
+<li>如果使用“PassWall”，安装SmartDNS Dev版本，并且选择DNS服务为SmartDNS后不要启用SmartDNS。</li>
+<li>指定客户端DNS而非路由器本身。</li>
+</ol>
 <h3><strong>WireGuard/OpenVPN</strong></h3>
 <h4>介绍：</h4>
 <p>WireGuard 是几乎无状态的VPN协议，切换网络零感知，不需要重新连接VPN，对于经常睡眠-唤醒的电脑特别有用。睡眠唤醒后可以立刻上网。此外 WireGuard 在 Linux 和 Windows 操作系统上均是纯内核态的实现，性能极其高。</p>
