@@ -163,14 +163,14 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </ol>
 <h4>缺点：</h4>
 <ol>
-<li>速度、性能略微逊于Socks5</li>
+<li>效率略微逊于Socks5</li>
 <li>WG在Linux系下需内核支持，否则只能使用用户态Go，据说性能有损失（打折多少未知。在试用时遇到超时问题，写稿第一天才知系MTU问题，故未测试）</li>
 <li>WireGuard的服务端“如”易搭建。在OpenWRT上有点给我绕麻了，其他平台搭建就很简单。</li>
 <li>OpenVPN基于用户层且性能相较于WG差很多。在MT7981上跑到200Mbps就吃满CPU了，换用IPQ6018则是跑到200Mbps没有吃满，速度也上不去。</li>
 </ol>
 <h4>实现效果：</h4>
 <ol>
-<li>前文已述，WireGuard速度相较于Socks会稍微慢一点，但也够用且更完美些（50Mb/s）</li>
+<li>前文已述，WireGuard速度相较于Socks会稍微慢一点，但也够用且更完美些（50Mb/s，服务端为E3 1220v2）</li>
 </ol>
 <h4>搭建：</h4>
 <h4><strong>基于WireGuard</strong></h4>
