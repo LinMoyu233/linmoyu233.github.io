@@ -160,7 +160,7 @@ OpenVPN相较于WireGuard性能会差，可基于TCP（WG强制要求UDP）。�
 ![QQ20241008-133752](https://github.com/user-attachments/assets/b4f4e283-f00a-4e0b-afcc-b126a516255d)
 在控制面板中将TUN模式的网卡共享给热点的网卡即可。
 ![QQ20241008-133300](https://github.com/user-attachments/assets/26125d55-d20c-4a79-93e8-fd59b5b0050d)
-哦对了，如果53端口可以解析的话就不要开启DNS路由了，免得又绕了一圈。
+哦对了，如果53端口可以解析的话就不要开启DNS路由了，默认出站方式改为bypass，免得又绕了一圈。
 *顺带一提，使用了这个方式后你的网速将跑不到20M，建议还是整路由。*
 
 
