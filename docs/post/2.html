@@ -111,17 +111,11 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>以下内容基于Socks，这类是转发数据。</p>
 <h4>优点：</h4>
 <ol>
-<li>用户层，无需内核模块，搭建简单</li>
-<li>性能不错（在IPQ6018上可以跑满折下来的带宽且CPU没满）</li>
+<li>用户层，无需内核模块，搭建简单，且性能不错（没有加密，在IPQ6018上可以跑满折下来的带宽且CPU没满）</li>
 </ol>
 <h4>缺点：</h4>
 <ol>
 <li>仅支持TCP、UDP传输协议，不支持ICMP类报文，会导致一些东西不可用（例如一些加速服务检测延迟不走tcping，会误报延迟）。</li>
-</ol>
-<h4>实现效果：</h4>
-<ol>
-<li>可吃满，巅峰下载60Mb/s（测试基于花瓣测速，设备只有千兆，中转折半）</li>
-<li>日常够用，非必要无需折腾</li>
 </ol>
 <h4>搭建：</h4>
 <h4>服务端：</h4>
@@ -133,10 +127,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>点击添加后，如果你的依赖没有问题的话，你应该会在类型里看见很多东西。</p>
 <p>选择Socks，填写监听端口，并确保不会被占用。</p>
 <p>当然，你也可以在这里选择用Sing-Box后再选择Socks。</p>
-<p>身份认证勾选随意，安全性。不勾你也不会失去什么，还没看见有人会去扫IP。</p>
-<p><strong>如果有“局域网访问”，请务必记得勾选。</strong></p>
+<p>身份认证随意。不勾你也不会失去什么，还没看见有人会去扫IP。</p>
 <p><strong>创建完服务后，在用户管理前给相关服务端配置的打勾，记得勾选服务器端的启用。</strong></p>
-<p><strong>如果连不上并且局域网内确实可以互连，请确保OpenWRT防火墙中的通信协议放行了监听端口</strong></p>
+<p><strong>如果连不上并且局域网内确实可以互连，请确保OpenWRT防火墙中的通信协议放行了监听端口，或在服务端配置内试图勾选“局域网访问”。</strong></p>
 <p>或使用<a href="https://github.com/SagerNet/sing-box/releases">Sing-Box</a>可执行文件直接搭建服务端。<a href="https://raw.githubusercontent.com/LinMoyu233/Archives/refs/heads/main/socks-config.conf" rel="nofollow">配置文件示例</a></p>
 <p>运行命令：“sing-box run -c socks5-config.json”，其中socks5-config.json为文件名。</p>
 <h4>客户端：</h4>
@@ -205,7 +198,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/b4f4e283-f00a-4e0b-afcc-b126a516255d"><img src="https://github.com/user-attachments/assets/b4f4e283-f00a-4e0b-afcc-b126a516255d" alt="QQ20241008-133752" style="max-width: 100%;"></a><br>
 在控制面板中将TUN模式的网卡共享给热点的网卡即可。<br>
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/26125d55-d20c-4a79-93e8-fd59b5b0050d"><img src="https://github.com/user-attachments/assets/26125d55-d20c-4a79-93e8-fd59b5b0050d" alt="QQ20241008-133300" style="max-width: 100%;"></a><br>
-哦对了，如果53端口可以解析的话就不要开启DNS路由了，默认出站方式改为bypass，免得又绕了一圈。<br>
+如果你的DNS可以解析的话就不要开启DNS路由了，并且将默认出站方式改为bypass，免得又绕了一圈。<br>
 <em>顺带一提，使用了这个方式后你的网速将跑不到20M，建议还是整路由。</em></p>
 <h3><strong>参考，虽然之前都没看</strong></h3>
 <blockquote>
