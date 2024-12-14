@@ -59,7 +59,7 @@
 
 1. 如果你是OpenWRT设备，并且刚刚好有“PassWall”，前往“PassWall”中有个服务端页面，其搭建非常简单。
 
-![](https://blog.linmoyu.top/images/2.1.webp)
+![](https://pages.linmoyu.top/images/2.1.webp)
 
 点击添加后，如果你的依赖没有问题的话，你应该会在类型里看见很多东西。
 
@@ -99,7 +99,7 @@ WireGuard 是几乎无状态的VPN协议，切换网络零感知，不需要重�
 OpenVPN相较于WireGuard性能会差，可基于TCP（WG强制要求UDP）。一般建议使用UDP搭建，不需要类似TCP一样的握手环节，否则延迟++。
 
 **两者均不建议使用一些arm老矿渣搭建，实测玩客云吃不消**
-![](https://blog.linmoyu.top/images/2.2.webp)
+![](https://pages.linmoyu.top/images/2.2.webp)
 
 
 #### 优点：
@@ -138,19 +138,19 @@ OpenVPN相较于WireGuard性能会差，可基于TCP（WG强制要求UDP）。�
 但是UA3F本人在跑花瓣测速在测试上传时CPU会被进程爆满，原因未知。
 
 4. 躲得过自动检测，躲不过人心。贵校有一套用户管理系统，居然一个IP划为一个用户。封了这个用户换个IP即可复活。在对抗了（只改IP）好一会后发现有几台机子还活着，只封跟内网流量大的机器，再过一会发现不封号了。推测是人工封号，过于高能。
-![](https://blog.linmoyu.top/images/2.3.webp)
+![](https://pages.linmoyu.top/images/2.3.webp)
 
 ## 通过外挂设备使任一硬路由可用
 
 其实就是旁路由，可用但是延迟较高。
-![](https://blog.linmoyu.top/images/2.4.webp)
-![](https://blog.linmoyu.top/images/2.5.webp)
+![](https://pages.linmoyu.top/images/2.4.webp)
+![](https://pages.linmoyu.top/images/2.5.webp)
 
 ## 使用电脑开代理热点
 以NekoBox举例。使用代理后启用TUN模式。
-![](https://blog.linmoyu.top/images/2.6.png)
+![](https://pages.linmoyu.top/images/2.6.png)
 在控制面板中将TUN模式的网卡共享给热点的网卡即可。
-![](https://blog.linmoyu.top/images/2.7.webp)
+![](https://pages.linmoyu.top/images/2.7.webp)
 如果你的DNS可以解析的话就不要开启DNS路由了，并且将默认出站方式改为bypass，免得又绕了一圈。
 *顺带一提，使用了这个方式后你的网速将跑不到20M，建议还是整路由。*
 
