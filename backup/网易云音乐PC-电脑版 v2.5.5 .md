@@ -2,7 +2,7 @@
 
 **网易云音乐PC/电脑版UI改版前经典版本，非v2后期改UI版本，且这个版本右上角用户图标旁边没有开通VIP。**
 
-![](https://images.linmoyu.top/202412141353328.png)
+![](https://blog.linmoyu.top/images/3.1.png)
 
 **v3真的一坨屎。我经常切歌，有时候切了又不放，或者切完播放器已经到下一首了还在播上一首。不知道是不是因为E5 2666v3单核性能不高的原因。**
 
@@ -16,7 +16,7 @@
 
 [VirusTotal](https://www.virustotal.com/gui/file/639ae78bd358d28b8a188b8d26a8dc08425b5525be707b14116aa60aa16d1923?nocache=1) 
 
-![](https://images.linmoyu.top/202412141353329.png)
+![](https://blog.linmoyu.top/images/3.2.png)
 
 见仁见智。
 
@@ -27,4 +27,4 @@
 
 **并且如果你有UAC，并且在开启网易云时候弹出询问窗口，请不要给予权限。**
 
-![](https://images.linmoyu.top/202412141353393.png)
+![](https://blog.linmoyu.top/images/3.3.png)
